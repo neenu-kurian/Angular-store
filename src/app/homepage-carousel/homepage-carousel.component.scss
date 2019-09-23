@@ -1,0 +1,29 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+
+.picsum-img-wrapper {
+  display: block;
+  text-align: center;
+  img {
+    width: 100%;
+    max-width: 1500px;
+  }
+}
+
+.start-shopping {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.carousel-caption {
+  bottom: 500px;
+}
+
+@include media-breakpoint-down(lg) {
+  .carousel-caption {
+    bottom: 40px;
+  }
+}
